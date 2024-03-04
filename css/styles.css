@@ -36,6 +36,7 @@ a {
   font-size: large;
 }
 
-.project-container {
+.project-container,
+.lab-container {
   display: flex;
 }
