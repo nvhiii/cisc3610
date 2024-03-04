@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#myCanvas {
+  border: 1px solid black;
+  margin: 0 auto;
+  display: block;
+}
