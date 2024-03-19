@@ -13,6 +13,8 @@ var ctx = canvas.getContext("2d");
 // Get canvas dimensions dynamically
 var chartWidth = canvas.width;
 var chartHeight = canvas.height;
+canvas.style.display = "flex";
+canvas.style.justifyContent = "center";
 
 // Set margins (adjusted for full canvas size)
 var margin = 20;

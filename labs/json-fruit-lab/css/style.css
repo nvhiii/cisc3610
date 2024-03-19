@@ -3,9 +3,15 @@ body {
   margin: 0; /* Remove body margin for full canvas size */
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
 canvas {
-  width: 100%; /* Set canvas to 100% width and height */
-  height: 100%;
+  width: 50%; /* Set canvas to 100% width and height */
+  height: 50%;
+  margin: auto;
 }
 
 .para-container {
