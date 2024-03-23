@@ -19,6 +19,9 @@ function drawMap(canvas, ctx) {
     drawRowOfTrees(ctx, y, numTreesPerRow); // Call the drawRowOfTrees function with current y and number of trees
   }
 
+  ctx.fillStyle = "#7FE49F"; // minty green
+  ctx.fillRect(canvas.width / 16, 140, canvas.width - 100, canvas.height - 240);
+
   // Buildings (top rect is roof, bottom is walls)
 
   // Main house graphics
