@@ -14,7 +14,7 @@ p {
   margin-top: 20px;
 }
 
-#myCanvas {
+#gameMap {
   border: 1px solid black;
   margin: 0 auto;
   display: block;

@@ -160,6 +160,24 @@ function drawMap(canvas, ctx) {
   ctx.fillRect(130, 450, 100, 100);
   ctx.fillRect(400, 40, 150, 150);
   ctx.fillRect(475, 30, 75, 150);
+
+  // ctx.beginPath();
+  // ctx.arc(260, 100, 20, 0, 2 * Math.PI);
+  // ctx.stroke();
+  // ctx.fillStyle = "#FFFFFF";
+  // ctx.fill();
+
+  // ctx.beginPath();
+  // ctx.arc(280, 100, 30, 0, 2 * Math.PI);
+  // ctx.stroke();
+  // ctx.fillStyle = "#FFFFFF";
+  // ctx.fill();
+
+  // ctx.beginPath();
+  // ctx.arc(310, 100, 15, 0, 2 * Math.PI);
+  // ctx.stroke();
+  // ctx.fillStyle = "#FFFFFF";
+  // ctx.fill();
 }
 
 // Function to draw a single tree
