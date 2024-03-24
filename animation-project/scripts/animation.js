@@ -17,6 +17,57 @@ function drawMap(canvas, ctx) {
   canvas.width = 800;
   canvas.height = 600;
 
+  const width = 16;
+  const height = 18;
+
+  // Define the drawFrame function
+  function drawFrame(frameX, frameY, canvasX, canvasY) {
+    ctx.drawImage(
+      img,
+      frameX * width,
+      frameY * height,
+      width,
+      height,
+      canvasX,
+      canvasY,
+      width,
+      height
+    );
+  }
+
+  drawFrame(0, 0, 0, 0);
+  drawFrame(1, 0, width, 0);
+  drawFrame(0, 0, width * 2, 0);
+  drawFrame(2, 0, width * 3, 0);
+
+  const cycleLoop = [0, 1, 0, 2];
+  let currentLoopIndex = 0;
+  let frameCount = 0;
+  let currentDirection = 0;
+
+  function step() {
+    frameCount++;
+    if (frameCount < 15) {
+      window.requestAnimationFrame(step);
+      return;
+    }
+    frameCount = 0;
+    ctx.clearRect(0, 0, 20, 20);
+    drawFrame(cycleLoop[currentLoopIndex], currentDirection, 0, 0);
+    currentLoopIndex++;
+    if (currentLoopIndex >= cycleLoop.length) {
+      currentLoopIndex = 0;
+      currentDirection++; // Next row/direction in the sprite sheet
+    }
+    // Reset to the "down" direction once we've run through them all
+    if (currentDirection >= 4) {
+      currentDirection = 0;
+    }
+    window.requestAnimationFrame(step);
+  }
+
+  window.requestAnimationFrame(step);
+
   // Background color
   ctx.fillStyle = "#7FE49F"; // minty green
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -171,9 +222,6 @@ function drawMap(canvas, ctx) {
   ctx.fillRect(130, 450, 100, 100);
   ctx.fillRect(400, 40, 150, 150);
   ctx.fillRect(475, 30, 75, 150);
-
-  let scale = 2;
-  ctx.drawImage(img, 0, 0, 16, 18, 0, 0, 16 * scale, 18 * scale);
 }
 
 // Function to draw a single tree
