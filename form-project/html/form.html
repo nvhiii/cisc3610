@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Weight Calculator</title>
+    <link rel="stylesheet" href="../css/form.css" />
+    <script src="../scripts/form.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Space Weight Calculator</h1>
+      <img src="space.jpg" alt="Space background" />
+      <form id="weight-form">
+        <label for="earthWeight">Your weight on Earth (kg):</label>
+        <input type="number" id="earthWeight" name="earthWeight" required />
+        <br />
+        <h2>Select a Planet:</h2>
+        <div class="planets">
+          <input type="radio" id="mercury" name="planet" value="mercury" />
+          <label for="mercury">Mercury</label>
+          <br />
+          <input type="radio" id="venus" name="planet" value="venus" />
+          <label for="venus">Venus</label>
+          <br />
+          <input type="radio" id="mars" name="planet" value="mars" />
+          <label for="mars">Mars</label>
+          <br />
+          <input type="radio" id="jupiter" name="planet" value="jupiter" />
+          <label for="jupiter">Jupiter</label>
+          <br />
+          <input type="radio" id="saturn" name="planet" value="saturn" />
+          <label for="saturn">Saturn</label>
+          <br />
+        </div>
+        <button type="button" id="calculate">Calculate</button>
+        <button type="button" id="reset">Reset</button>
+        <p id="result"></p>
+      </form>
+    </div>
+  </body>
+</html>
