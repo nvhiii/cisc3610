@@ -1,0 +1,25 @@
+body {
+  margin: auto;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  padding: 0;
+  margin: auto;
+  display: block; /* need to do block display for canvas */
+  width: 800px;
+}
+
+.anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
