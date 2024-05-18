@@ -19,13 +19,13 @@
     ></script>
 
     <!-- external css + script -->
-    <link rel="stylesheet" href="" />
-    <script src="" defer></script>
+    <link rel="stylesheet" href="./css/resume.css" />
+    <!-- <script src="" defer></script> -->
   </head>
   <body>
     <!-- navbar ui -->
     <div class="container">
-      <nav class="navbar navbar-light navbar-expand-sm sticky-top">
+      <nav class="navbar navbar-light navbar-expand-lg sticky-top">
         <div class="container-fluid">
           <div class="navbar-brand">Nahi's Resume</div>
           <button
@@ -33,6 +33,9 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navItem"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -42,15 +45,276 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#edu">Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#exp">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proj">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#awards">Awards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../labs.html">Back to Labs</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+    </div>
+
+    <!-- abt-me container -->
+    <div class="container">
+      <div class="header" id="name">
+        <p class="display-1 text-center">Nahi Khan</p>
+      </div>
+      <div class="row" id="contact">
+        <div class="col-sm-4 text-center">Website</div>
+        <div class="col-sm-4 text-center">LinkedIn</div>
+        <div class="col-sm-4 text-center">Github</div>
+      </div>
+    </div>
+
+    <div class="summary container mt-2">
+      <p class="lead text-center">Hey, I'm Nahi.</p>
+      <div class="mb-3">
+        I'm a software engineering mentee at
+        <div class="google d-inline fw-bold">
+          <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span
+          ><span>e</span>
+        </div>
+        and a computer science student at Brooklyn College. In my free time, I
+        like to lift weights, cook, play basketball, curate playlists,
+        appreciate impressionists, and
+        <em>pspsps</em> at NYC stray cats.
+      </div>
+    </div>
+
+    <!-- edu container -->
+    <div class="container mb-3" id="edu">
+      <p class="lead fw-bold mb-0">Education</p>
+      <div class="row">
+        <div class="col-6">Brooklyn College, CUNY</div>
+        <div class="col-6 text-end">2025</div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <em>Bachelor of Science (Computer Science)</em>
+        </div>
+        <div class="col-6 text-end"><em>Brooklyn, NY</em></div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <em
+              >Relevant Coursework: Statistics, Machine Learning, Database
+              Structures, Web Applications, Algorithms and Data Structures,
+              Operating Systems</em
+            >>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">Stuyvesant High School</div>
+        <div class="col-6 text-end">2020</div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <em>Honors Student</em>
+        </div>
+        <div class="col-6 text-end"><em>Manhattan, NY</em></div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul>
+            <em
+              >Relevant Coursework: Software Development, Artificial
+              Intelligence</em
+            >>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          Skills: <span class="fw-bold">Languages:</span> Java, Python,
+          JavaScript, TypeScript, HTML/CSS, SQL, LATEX
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <span class="fw-bold">Technologies</span> Git, Linux, Bash, MongoDB,
+          Node.js (Express), React, Insomnia/Postman, scikit-learn, Jupyter
+          Notebook
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="exp">
+      <p class="lead fw-bold mb-0">Experience</p>
+      <div class="exp-1">
+        <div class="row">
+          <div class="col-6 fw-bold">Google</div>
+          <div class="col-6 text-end">Sep 2023 - Present</div>
+        </div>
+        <div class="row">
+          <div class="col-6"><em>Mentee</em></div>
+          <div class="col-6 text-end"><em>Hybrid</em></div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              <li>
+                Devised a full-stack web-app for gym enthusiasts, driving a 60%
+                growth in the user base by leveraging Google Gemini API and
+                retrieval-augmented generation (RAG) techniques in JavaScript
+              </li>
+              <li>
+                Initiated streamlined workflows and prevented 2 major production
+                roadblocks for a 5-person team by implementing weekly meetings
+                and a central GitHub repository
+              </li>
+              <li>
+                Optimized Gemini LLM query results by 20% through user
+                segmentation and multifaceted pipeline algorithms.
+              </li>
+              <li>
+                Collaborated with peers to discern data security and robust REST
+                API usage, stressing the importance of proper environmental
+                variable usage
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp-2">
+        <div class="row">
+          <div class="col-6 fw-bold">Forage</div>
+          <div class="col-6 text-end">Sep 2022 – May 2023</div>
+        </div>
+        <div class="row">
+          <div class="col-6"><em>Software Engineering Intern</em></div>
+          <div class="col-6 text-end"><em>Virtual</em></div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              <li>
+                Extracted and analyzed 19 password hashes from a leaked data
+                dump, uncovering potential security weaknesses via comparison
+                with MD5 hashes
+              </li>
+              <li>
+                Constructed a password cracking program with linear time
+                complexity (O(n)) to efficiently identify potential password
+                matches, by iterating through and comparing passwords from two
+                separate datasets (Python)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="exp-3">
+        <div class="row">
+          <div class="col-6 fw-bold">Xpert Field Services LLC</div>
+          <div class="col-6 text-end">Jan 2021 – May 2022</div>
+        </div>
+        <div class="row">
+          <div class="col-6"><em>Software Engineering Mentee</em></div>
+          <div class="col-6 text-end"><em>On-Site</em></div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              <li>
+                Authored a redesigned B2B webpage that increased click-through
+                rate (CTR) by 25% for potential business partners (TypeScript,
+                HTML, TailwindCSS)
+              </li>
+              <li>
+                Enabled 10+ vendors to access the database via an internal NLP
+                Slack bot. This Java bot translates natural language queries
+                into MySQL, simplifying data retrieval
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="awards">
+      <p class="lead fw-bold mb-0">Awards & Certfications</p>
+      <div class="cert-1">
+        <div class="row">
+          <div class="col-6 fw-bold">ORACLE</div>
+          <div class="col-6 text-end"><em>In Progress</em></div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              <em
+                >JAVA SE - Oracle Certified Professional, Java SE 8
+                Programmer</em
+              >
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="proj">
+      <p class="lead fw-bold mb-0">Projects</p>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img
+              src="./imgs/pexels-valery-anatolievich-485490101-18352382.jpg"
+              class="card-img-top"
+              alt="nyc skyline"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Proj 1</h5>
+              <p class="card-text">abc</p>
+              <a href="#" class="btn brg">Github Link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img src="./imgs/straycat.jpg" class="card-img-top" alt="cat" />
+            <div class="card-body">
+              <h5 class="card-title">Proj 2</h5>
+              <p class="card-text">def</p>
+              <a href="#" class="btn brg">Github Link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img src="./imgs/poke.jpg" class="card-img-top" alt="Pokebowl" />
+            <div class="card-body">
+              <h5 class="card-title">Proj 3</h5>
+              <p class="card-text">ghi</p>
+              <a href="#" class="btn brg">Github Link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <img
+              src="./imgs/jpnvillage.jpg"
+              class="card-img-top"
+              alt="turkey"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Proj 4</h5>
+              <p class="card-text">jkl</p>
+              <a href="#" class="btn brg">Github Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
