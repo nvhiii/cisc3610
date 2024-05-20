@@ -7,40 +7,139 @@
       <title>Labs</title>
       <link rel="stylesheet" href="../css/styles.css" />
       <!-- <script src="./scripts/index.js" defer></script> -->
+      <!-- bootstrap -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
     </head>
   </head>
   <body>
-    <div class="header-container">
-      <div class="logo">
-        <a href="../index.html" rel="noopener noreferrer"
-          >CISC 3610 Labs (click)</a
-        >
+    <!-- nav -->
+    <div class="container">
+      <nav class="navbar navbar-light navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <div class="navbar-brand fw-bold">CISC 3610</div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navItem"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-end justify-content-end"
+            id="navItem"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-success fw-bold" href="../index.html"
+                  >Home</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- labs title -->
+    <div class="container">
+      <div class="text-center">
+        <p class="display-1 text-primary fw-bold">Labs</p>
+      </div>
+      <div class="text-center">
+        <p class="display-5">nahikhan16@gmail.com</p>
       </div>
     </div>
 
-    <div class="contact-container">
-      <div class="name">Nahi Khan</div>
-      <div class="email">nahikhan16@gmail.com</div>
-      <div class="home">
-        <a href="../index.html">Home</a>
+    <!-- proj container -->
+    <div class="container my-works" id="labs">
+      <div class="row mx-4">
+        <div class="col-md-3 ps-4 mb-3">
+          <div class="card">
+            <img src="./imgs/onyx.png" class="card-img-top" alt="onyx" />
+            <div class="card-body">
+              <h5 class="card-title">Audio Lab</h5>
+              <p class="card-text">Fun implementation of random audio</p>
+              <button type="button" class="btn btn-success">
+                <a
+                  href="./audio-lab/html/audio.html"
+                  class="text-white text-decoration-none"
+                  >Lab Link</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ps-4 mb-3">
+          <div class="card">
+            <img
+              src="./imgs/seagreen.png"
+              class="card-img-top"
+              alt="seagreen"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap Lab</h5>
+              <p class="card-text">Testing components of Bootstrap</p>
+              <button type="button" class="btn btn-success">
+                <a
+                  href="./bootstrap/html/bootstrap.html"
+                  class="text-white text-decoration-none"
+                  >Lab Link</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ps-4 mb-3">
+          <div class="card">
+            <img src="./imgs/pearl.png" class="card-img-top" alt="pearl" />
+            <div class="card-body">
+              <h5 class="card-title">JSON Fruit Lab</h5>
+              <p class="card-text">Canvas + json data structuring</p>
+              <button type="button" class="btn btn-success">
+                <a
+                  href="./json-fruit-lab/html/fruits.html"
+                  class="text-white text-decoration-none"
+                  >Lab Link</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ps-4 mb-3">
+          <div class="card">
+            <img
+              src="./imgs/bittersweet.png"
+              class="card-img-top"
+              alt="bittersweet"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Resume Lab</h5>
+              <p class="card-text">My resume - styled in Bootstrap</p>
+              <button type="button" class="btn btn-success">
+                <a
+                  href="./resume-lab/html/resume.html"
+                  class="text-white text-decoration-none"
+                  >Lab Link</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="lab-container">
-      <ul>
-        <li>
-          <a href="./json-fruit-lab/html/fruits.html">JSON Fruit Lab</a>
-        </li>
-        <li>
-          <a href="./audio-lab/html/audio.html">Sound Machine</a>
-        </li>
-        <li>
-          <a href="./bootstrap/html/bootstrap.html">Bootstrap</a>
-        </li>
-        <li>
-          <a href="./resume-lab/html/resume.html">Resume</a>
-        </li>
-      </ul>
     </div>
   </body>
 </html>

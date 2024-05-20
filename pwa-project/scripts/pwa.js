@@ -6,6 +6,7 @@ self.addEventListener("install", (event) => {
         "../html/manifest.json",
         "./app.js",
         "./pwa.js",
+        "./form.js",
         "../html/icon-192x192.png",
         "../html/icon-512x512.png",
       ]);
