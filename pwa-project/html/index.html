@@ -10,7 +10,7 @@
     />
 
     <!-- Title -->
-    <title>PWA Tutorial</title>
+    <title>McSpace Weight Calculator</title>
 
     <!-- Meta Tags required for
 	Progressive Web App -->
@@ -20,15 +20,85 @@
     <!-- Manifest File link -->
     <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
     <script src="../scripts/app.js" defer></script>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/form.js" defer></script>
   </head>
 
-  <body>
-    <h1 style="color: green">GeeksforGeeks</h1>
-
-    <p>This is a simple tutorial for creating a PWA application.</p>
-
+  <body class="bg-dark">
     <div class="container">
-      <a href="../../index.html">Home</a>
+      <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <div class="navbar-brand text-white">McSpace Weight Calculator</div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navItem"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-end justify-content-end"
+            id="navItem"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#calc">Calculator</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="../../index.html"
+                  >Home</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container" id="calc">
+      <h1 class="text-white">Space Weight Calculator</h1>
+      <form id="weight-form" class="">
+        <label class="text-white" for="earthWeight"
+          >Your weight on Earth (kg):</label
+        >
+        <input type="number" id="earthWeight" name="earthWeight" required />
+        <br />
+        <h2 class="text-white">Select a Planet:</h2>
+        <div class="planets text-white">
+          <input type="radio" id="mercury" name="planet" value="mercury" />
+          <label for="mercury" class="text-white">Mercury</label>
+          <br />
+          <input type="radio" id="venus" name="planet" value="venus" />
+          <label for="venus" class="text-white">Venus</label>
+          <br />
+          <input type="radio" id="mars" name="planet" value="mars" />
+          <label for="mars" class="text-white">Mars</label>
+          <br />
+          <input type="radio" id="jupiter" name="planet" value="jupiter" />
+          <label for="jupiter" class="text-white">Jupiter</label>
+          <br />
+          <input type="radio" id="saturn" name="planet" value="saturn" />
+          <label for="saturn" class="text-white">Saturn</label>
+          <br />
+        </div>
+        <p id="result" class="text-white"></p>
+      </form>
     </div>
   </body>
 </html>
